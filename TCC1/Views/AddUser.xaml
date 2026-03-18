@@ -1,0 +1,20 @@
+﻿<Window x:Class="TCC1.Views.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCC1.Views"
+        mc:Ignorable="d"
+        Title="AddUser" Height="450" Width="309">
+    <Grid Margin="0,0,0,-6">
+        
+        <Label Content="Name" HorizontalAlignment="Left" Margin="32,37,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NameTtx" HorizontalAlignment="Left" Margin="32,63,0,0" Text="{Binding Name}" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="200"/>
+        
+        <Label Content="Email" HorizontalAlignment="Left" Margin="32,147,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EmailTxt" HorizontalAlignment="Left" Margin="32,178,0,0" Text="{Binding Email}" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="200"/>
+       
+        <Button Content="Add" Command="{Binding AddUserCommand}" Height="30" Width="70" HorizontalAlignment="Left" Margin="92,280,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
